@@ -1,118 +1,122 @@
-@import url(https://fonts.google.com/specimen/Young+Serif);
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: hsl(30, 54%, 90%);
-    font-family: Outfit;
-    padding: 2rem 0;
-    color: hsl(30, 10%, 34%);
-}
-h1{
-    color: black;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.container {
-    width: 90%;
-    max-width: 740px;
-    padding: 2.5rem;
-    background-color: white;
-    border-radius: 2rem;
-    margin: auto;
-}
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: hsl(30, 54%, 90%);
+      font-family: 'Outfit', sans-serif;
+      padding: 2rem 0;
+      color: hsl(30, 10%, 34%);
+    }
 
-.con {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    padding: 0 1rem;
-}
+    h1 {
+      color: black;
+      font-family: 'Young Serif', serif;
+    }
 
-img {
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* order and unorder  */
-.preparation{
-    background-color: hsl(330, 100%, 98%);
-    padding: 20px 3rem;
-    border: none;
-    border-radius: 10px;
-}
-.preparation span{
-    color:  hsl(332, 51%, 32%);
-    font-size: 1.5rem;
-    font-weight: 800;
-    font-family: sans-serif;
-}
-ul, ol {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-h2, ul li::marker, ol li::marker,.col {
-    color: hsl(14, 45%, 36%); 
-    font-family: bold;
-}
-ul li, ol li{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-table {
-    font-family: sans-serif;
-    border-collapse: collapse;
-
-    width: 100%;
-    line-height: 3rem;
-}
-
-td {
-    border-bottom: 0.43px solid rgb(170, 170, 170);
-    padding: 8px;
-}
-
-.col{
-    
-    font-weight:600 ;
-}
-
-/* attribution */
-.attribution{
-    color: hsl(14, 45%, 36%);
-    margin-top: 20px;
-}
-
-.attribution a{
-
-    text-decoration:none ;
-    font-weight: bold;
-    background: linear-gradient(to right, hsl(14, 45%, 36%), hsl(18, 95%, 54%),hsl(14, 100%, 36%));
-   
-    -webkit-text-fill-color: transparent;
-     -webkit-background-clip: text;
-}
-/* Responsive  */
-@media (max-width: 600px) {
     .container {
+      width: 90%;
+      max-width: 740px;
+      padding: 2.5rem;
+      background-color: white;
+      border-radius: 2rem;
+      margin: auto;
+    }
+
+    .con {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .preparation {
+      background-color: hsl(330, 100%, 98%);
+      padding: 20px 3rem;
+      border-radius: 10px;
+    }
+
+    .preparation li:first-child {
+      color: hsl(332, 51%, 32%);
+      font-size: 1.5rem;
+      font-weight: 800;
+      font-family: sans-serif;
+      list-style: none;
+    }
+
+    ul, ol {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h2 {
+      color: hsl(14, 45%, 36%);
+      font-family: 'Young Serif', serif;
+    }
+
+    ul li::marker, ol li::marker {
+      color: hsl(14, 45%, 36%);
+    }
+
+    ul li, ol li {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    table {
+      font-family: sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      line-height: 3rem;
+    }
+
+    td {
+      border-bottom: 0.43px solid rgb(170, 170, 170);
+      padding: 8px;
+    }
+
+    .col {
+      font-weight: 600;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .attribution {
+      color: hsl(14, 45%, 36%);
+      margin-top: 20px;
+    }
+
+    .attribution a {
+      text-decoration: none;
+      font-weight: bold;
+      background: linear-gradient(to right, hsl(14, 45%, 36%), hsl(18, 95%, 54%), hsl(14, 100%, 36%));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    @media (max-width: 600px) {
+      .container {
         width: 95%;
         padding: 1.5rem;
         border-radius: 1rem;
-    }
-    
-    .con {
+      }
+
+      .con {
         gap: 1.5rem;
         padding: 0;
+      }
     }
-}
