@@ -44,6 +44,18 @@ img {
 }
 
 /* order and unorder  */
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 3rem;
+    border: none;
+    border-radius: 10px;
+}
+.preparation span{
+    color:  hsl(332, 51%, 32%);
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+}
 ul, ol {
     display: flex;
     flex-direction: column;
